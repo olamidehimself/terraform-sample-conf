@@ -11,7 +11,7 @@ variable "AWS_SECRETKEY" {
 }
 
 variable "AMIS" {
-  type = map
+  type = map(any)
   default = {
     eu-west-1 = "ami-0d7f394c51e3e7d3e"
     eu-west-2 = "ami-0553c8e502a474394"
