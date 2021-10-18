@@ -18,3 +18,15 @@ variable "AMIS" {
     eu-west-3 = "ami-0a5af2e535910d7e3"
   }
 }
+
+variable "EC2_USERNAME" {
+  type = string
+}
+
+variable "PATH_TO_PUBLIC_KEY" {
+  default = "terraform_ubuntu.pub"
+}
+
+variable "PATH_TO_PRIVATE_KEY" {
+  default = "terraform_ubuntu"
+}
